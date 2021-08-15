@@ -3,10 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/Arjun/StudioProjects/VectiesContactsPro/app/src/main/res/layout/activity_onboard.xml" value="0.1793478260869565" />
-        <entry key="..\:/Users/Arjun/StudioProjects/VectiesContactsPro/app/src/main/res/layout/activity_sign_in.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/Arjun/StudioProjects/VectiesContactsPro/app/src/main/res/layout/activity_onboard.xml" value="0.25" />
+        <entry key="..\:/Users/Arjun/StudioProjects/VectiesContactsPro/app/src/main/res/layout/activity_sign_in.xml" value="0.25" />
         <entry key="..\:/Users/Arjun/StudioProjects/VectiesContactsPro/app/src/main/res/layout/activity_singn_up.xml" value="0.1793478260869565" />
-        <entry key="..\:/Users/Arjun/StudioProjects/VectiesContactsPro/app/src/main/res/layout/activity_splash.xml" value="0.1793478260869565" />
+        <entry key="..\:/Users/Arjun/StudioProjects/VectiesContactsPro/app/src/main/res/layout/activity_splash.xml" value="0.22" />
       </map>
     </option>
   </component>
