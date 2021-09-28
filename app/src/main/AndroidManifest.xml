@@ -13,10 +13,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.VectiesContactsPro" >
         <activity
+            android:name=".view.ui.login.WelcomeScreenActivity"
+            android:exported="true" />
+        <activity
             android:name=".view.ui.login.SingnUpActivity"
             android:exported="true"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustResize"/>
+            android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".view.ui.login.SignInActivity"
             android:exported="true"
