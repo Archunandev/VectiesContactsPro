@@ -4,185 +4,186 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white_smoke_lite"
+    android:background="@drawable/bc"
     android:orientation="vertical"
     tools:context=".view.ui.login.SingnUpActivity">
 
-    <androidx.core.widget.NestedScrollView
-        android:id="@+id/nested_scroll_view"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="2">
 
         <LinearLayout
-            android:id="@+id/slider_rltive"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:layout_marginTop="12dp"
-            android:gravity="center"
+            android:layout_height="0dp"
+            android:layout_gravity="right"
+            android:layout_weight="1"
+            android:gravity="right">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/skip_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="22dp"
+                android:backgroundTint="@android:color/transparent"
+                android:text="Skip"
+                android:textColor="@color/black"
+                app:cornerRadius="25dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
             android:orientation="vertical">
 
-            <TextView
+            <EditText
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="100dp"
-                android:gravity="top|center"
-                android:text="Login to Continue"
-                android:textAlignment="center"
-                android:textColor="@color/white_smoke_lite"
-                android:textSize="22sp" />
+                android:layout_height="52dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:background="@drawable/rounted_img_button"
+                android:drawableLeft="@drawable/ic_phone"
+                android:drawablePadding="8dp"
+                android:hint="Enter a Phone Number"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:paddingLeft="8dp"
+                android:textColor="@color/black" />
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="350dp"
-                android:layout_height="200dp"
-                android:layout_margin="16dp"
-                android:layout_marginTop="32dp"
-                android:background="@color/white_smoke_lite"
-                app:cardCornerRadius="12dp">
-
-                <ViewFlipper
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:autoStart="true"
-                    android:background="@color/white_smoke_lite"
-                    android:flipInterval="3000"
-                    android:inAnimation="@android:anim/slide_in_left"
-                    android:outAnimation="@android:anim/slide_out_right">
-
-                    <com.airbnb.lottie.LottieAnimationView
-                        android:id="@+id/animationView1"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        app:lottie_autoPlay="true"
-                        app:lottie_loop="true"
-                        app:lottie_rawRes="@raw/contact1" />
-
-                    <com.airbnb.lottie.LottieAnimationView
-                        android:id="@+id/animationView2"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        app:lottie_autoPlay="true"
-                        app:lottie_loop="true"
-                        app:lottie_rawRes="@raw/contact2" />
-
-                    <com.airbnb.lottie.LottieAnimationView
-                        android:id="@+id/animationView3"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        app:lottie_autoPlay="true"
-                        app:lottie_loop="true"
-                        app:lottie_rawRes="@raw/contact3" />
-
-                </ViewFlipper>
-            </androidx.cardview.widget.CardView>
-
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/send_otp"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_gravity="center"
+                android:layout_margin="32dp"
+                android:layout_marginTop="22dp"
+                android:elevation="5dp"
+                android:gravity="center"
+                android:text="Send otp"
+                app:backgroundTint="@color/primaryColor"
+                app:cornerRadius="8dp" />
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
                 android:gravity="center"
-                android:orientation="vertical">
+                android:weightSum="2">
 
-                <EditText
-                    android:id="@+id/password_text"
-                    android:layout_width="match_parent"
-                    android:layout_height="58dp"
-                    android:layout_marginStart="36dp"
-                    android:layout_marginTop="22dp"
-                    android:layout_marginEnd="36dp"
-                    android:background="@drawable/edit_text_bc"
-                    android:drawableLeft="@drawable/ic_phone"
-                    android:drawablePadding="12dp"
-                    android:hint="Phone No"
-                    android:inputType="phone"
-                    android:maxLength="40"
-                    android:paddingStart="8dp"
-                    android:paddingLeft="8dp"
-                    android:paddingEnd="16dp"
-                    android:paddingRight="16dp"
-                    android:textColor="@color/grey"
-                    android:textColorHint="@color/grey"
-                    tools:targetApi="lollipop" />
-
-
-                <com.google.android.material.button.MaterialButton
-                    android:id="@+id/login_button"
-                    android:layout_width="match_parent"
-                    android:layout_height="58dp"
-                    android:layout_marginStart="36dp"
-                    android:layout_marginTop="22dp"
-                    android:layout_marginEnd="36dp"
-                    android:backgroundTint="@color/white_smoke_lite"
-                    android:text="Get otp"
-                    android:textColor="@color/primaryColor"
-                    android:textStyle="bold"
-                    app:cornerRadius="12dp" />
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/white" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
-                    android:gravity="center_horizontal"
-                    android:text="(OR)"
-                    android:textAlignment="center"
-                    android:textColor="@color/white_smoke_lite"
-                    android:textSize="16sp" />
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:layout_marginLeft="36dp"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginRight="36dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
                     android:gravity="center"
-                    android:orientation="horizontal">
-
-                    <com.google.android.material.floatingactionbutton.FloatingActionButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="12dp"
-                        android:layout_marginRight="22dp"
-                        android:layout_marginBottom="12dp"
-                        android:clickable="true"
-                        android:src="@drawable/ic_icons8_google"
-                        app:backgroundTint="@color/white_smoke_lite"
-                        app:fabSize="normal" />
+                    android:text="OR"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
 
 
-                    <com.google.android.material.floatingactionbutton.FloatingActionButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="12dp"
-                        android:layout_marginBottom="12dp"
-                        android:clickable="true"
-                        android:src="@drawable/ic_facebook"
-                        app:backgroundTint="@color/white_smoke_lite"
-                        app:fabSize="normal" />
-
-                    <com.google.android.material.floatingactionbutton.FloatingActionButton
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="22dp"
-                        android:layout_marginTop="12dp"
-                        android:layout_marginBottom="12dp"
-                        android:clickable="true"
-                        android:src="@drawable/ic_twitter"
-                        app:backgroundTint="@color/white_smoke_lite"
-                        app:fabSize="normal" />
-
-
-                </LinearLayout>
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="2dp"
+                    android:layout_weight="1"
+                    android:background="@color/white" />
 
 
             </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="22dp"
+                android:weightSum="3"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="22dp"
+                    android:layout_weight="1">
+
+                    <ImageButton
+                        android:id="@+id/imageButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:background="@drawable/rounted_img_button"
+                        android:src="@drawable/ic_facebook" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <ImageButton
+                        android:id="@+id/imageButton2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounted_img_button"
+                        android:src="@drawable/ic_icons8_google" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:layout_marginRight="22dp"
+                    android:layout_weight="1">
+
+                    <ImageButton
+                        android:id="@+id/imageButton3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounted_img_button"
+                        android:src="@drawable/ic_twitter" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:layout_marginTop="8dp"
+                android:gravity="bottom|center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="By Clicking login you accept our \n terms &amp; conditions"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textStyle="italic" />
+
+            </RelativeLayout>
+
+
         </LinearLayout>
 
 
-    </androidx.core.widget.NestedScrollView>
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

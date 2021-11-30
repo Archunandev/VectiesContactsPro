@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.vectiescontactspro" >
+    package="com.example.vectiescontactspro">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
@@ -11,10 +11,19 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.VectiesContactsPro" >
+        android:theme="@style/Theme.VectiesContactsPro">
+        <activity
+            android:name=".view.ui.dashboard.DashBordActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.VectiesContactsPro"
+            android:windowSoftInputMode="adjustPan"
+            />
         <activity
             android:name=".view.ui.login.WelcomeScreenActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize"/>
         <activity
             android:name=".view.ui.login.SingnUpActivity"
             android:exported="true"
@@ -34,7 +43,7 @@
             android:name=".view.ui.splash.SplashActivity"
             android:exported="true"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustResize" >
+            android:windowSoftInputMode="adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

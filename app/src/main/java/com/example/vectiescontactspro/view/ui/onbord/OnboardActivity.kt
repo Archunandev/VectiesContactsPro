@@ -10,6 +10,9 @@ import androidx.annotation.RequiresApi
 import androidx.core.content.ContextCompat
 import com.example.vectiescontactspro.R
 import com.example.vectiescontactspro.databinding.ActivityOnboardBinding
+import com.example.vectiescontactspro.view.ui.dashboard.DashBordActivity
+import com.example.vectiescontactspro.view.ui.login.SingnUpActivity
+import com.example.vectiescontactspro.view.utils.Utils.Companion.openActivity
 
 class OnboardActivity : AppCompatActivity() {
 
@@ -20,11 +23,21 @@ class OnboardActivity : AppCompatActivity() {
         binding = ActivityOnboardBinding.inflate(layoutInflater)
         setContentView(binding.root)
         toolupBar()
+        getNeeted()
+
+    }
+
+    private fun getNeeted() {
+
+        binding.getNeeded.setOnClickListener {
+            openActivity(DashBordActivity::class.java, this)
+        }
 
     }
 
     private fun toolupBar() {
-        window?.decorView?.systemUiVisibility = (View.SYSTEM_UI_FLAG_LAYOUT_STABLE or View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN)
+        window?.decorView?.systemUiVisibility =
+            (View.SYSTEM_UI_FLAG_LAYOUT_STABLE or View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN)
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             window.statusBarColor = Color.TRANSPARENT
         }

@@ -3,13 +3,42 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/91965/StudioProjects/VectiesContactsPro/app/src/main/res/drawable-v24/ic_home_filled.xml" value="0.16277056277056276" />
+        <entry key="..\:/Users/91965/StudioProjects/VectiesContactsPro/app/src/main/res/drawable-v24/ic_home_normal.xml" value="0.16277056277056276" />
+        <entry key="..\:/Users/91965/StudioProjects/VectiesContactsPro/app/src/main/res/drawable-v24/ic_profile_unfilled.xml" value="0.1649122807017544" />
+        <entry key="..\:/Users/91965/StudioProjects/VectiesContactsPro/app/src/main/res/drawable/bottom_icon.xml" value="0.16203703703703703" />
         <entry key="..\:/Users/91965/StudioProjects/VectiesContactsPro/app/src/main/res/drawable/card_bc.xml" value="0.14666666666666667" />
+        <entry key="..\:/Users/91965/StudioProjects/VectiesContactsPro/app/src/main/res/drawable/default_dot.xml" value="0.12247557003257328" />
         <entry key="..\:/Users/91965/StudioProjects/VectiesContactsPro/app/src/main/res/drawable/edit_bc.xml" value="0.14666666666666667" />
-        <entry key="..\:/Users/91965/StudioProjects/VectiesContactsPro/app/src/main/res/layout/activity_onboard.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/91965/StudioProjects/VectiesContactsPro/app/src/main/res/drawable/home_icon_selector.xml" value="0.16277056277056276" />
+        <entry key="..\:/Users/91965/StudioProjects/VectiesContactsPro/app/src/main/res/drawable/ic_arrow_back.xml" value="0.1649122807017544" />
+        <entry key="..\:/Users/91965/StudioProjects/VectiesContactsPro/app/src/main/res/drawable/ic_facebook.xml" value="0.1649122807017544" />
+        <entry key="..\:/Users/91965/StudioProjects/VectiesContactsPro/app/src/main/res/drawable/ic_home_filled.xml" value="0.16277056277056276" />
+        <entry key="..\:/Users/91965/StudioProjects/VectiesContactsPro/app/src/main/res/drawable/ic_home_normal.xml" value="0.16277056277056276" />
+        <entry key="..\:/Users/91965/StudioProjects/VectiesContactsPro/app/src/main/res/drawable/ic_icons8_google.xml" value="0.1649122807017544" />
+        <entry key="..\:/Users/91965/StudioProjects/VectiesContactsPro/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1649122807017544" />
+        <entry key="..\:/Users/91965/StudioProjects/VectiesContactsPro/app/src/main/res/drawable/ic_person.xml" value="0.1649122807017544" />
+        <entry key="..\:/Users/91965/StudioProjects/VectiesContactsPro/app/src/main/res/drawable/ic_profile_filled.xml" value="0.16277056277056276" />
+        <entry key="..\:/Users/91965/StudioProjects/VectiesContactsPro/app/src/main/res/drawable/ic_search_filled.xml" value="0.16277056277056276" />
+        <entry key="..\:/Users/91965/StudioProjects/VectiesContactsPro/app/src/main/res/drawable/ic_search_normal.xml" value="0.16277056277056276" />
+        <entry key="..\:/Users/91965/StudioProjects/VectiesContactsPro/app/src/main/res/drawable/ic_twitter.xml" value="0.1649122807017544" />
+        <entry key="..\:/Users/91965/StudioProjects/VectiesContactsPro/app/src/main/res/drawable/profile_icon_selector.xml" value="0.16277056277056276" />
+        <entry key="..\:/Users/91965/StudioProjects/VectiesContactsPro/app/src/main/res/drawable/rounted_img_button.xml" value="0.12986111111111112" />
+        <entry key="..\:/Users/91965/StudioProjects/VectiesContactsPro/app/src/main/res/drawable/search_bg.xml" value="0.1" />
+        <entry key="..\:/Users/91965/StudioProjects/VectiesContactsPro/app/src/main/res/drawable/searh_icon_selector.xml" value="0.16277056277056276" />
+        <entry key="..\:/Users/91965/StudioProjects/VectiesContactsPro/app/src/main/res/drawable/selected_dot.xml" value="0.12247557003257328" />
+        <entry key="..\:/Users/91965/StudioProjects/VectiesContactsPro/app/src/main/res/drawable/tab_selector.xml" value="0.12247557003257328" />
+        <entry key="..\:/Users/91965/StudioProjects/VectiesContactsPro/app/src/main/res/layout/activity_dash_bord.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/91965/StudioProjects/VectiesContactsPro/app/src/main/res/layout/activity_onboard.xml" value="0.3333333333333333" />
         <entry key="..\:/Users/91965/StudioProjects/VectiesContactsPro/app/src/main/res/layout/activity_sign_in.xml" value="0.1796875" />
-        <entry key="..\:/Users/91965/StudioProjects/VectiesContactsPro/app/src/main/res/layout/activity_singn_up.xml" value="0.13333333333333333" />
+        <entry key="..\:/Users/91965/StudioProjects/VectiesContactsPro/app/src/main/res/layout/activity_singn_up.xml" value="0.3333333333333333" />
         <entry key="..\:/Users/91965/StudioProjects/VectiesContactsPro/app/src/main/res/layout/activity_splash.xml" value="0.1796875" />
         <entry key="..\:/Users/91965/StudioProjects/VectiesContactsPro/app/src/main/res/layout/activity_welcome_screen.xml" value="0.1796875" />
+        <entry key="..\:/Users/91965/StudioProjects/VectiesContactsPro/app/src/main/res/layout/fragment_account.xml" value="0.1513157894736842" />
+        <entry key="..\:/Users/91965/StudioProjects/VectiesContactsPro/app/src/main/res/layout/fragment_home.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/91965/StudioProjects/VectiesContactsPro/app/src/main/res/layout/fragment_search.xml" value="0.1513157894736842" />
+        <entry key="..\:/Users/91965/StudioProjects/VectiesContactsPro/app/src/main/res/menu/another_menu.xml" value="0.1513157894736842" />
+        <entry key="..\:/Users/91965/StudioProjects/VectiesContactsPro/app/src/main/res/menu/bottom_menu.xml" value="0.1513157894736842" />
         <entry key="..\:/Users/Arjun/StudioProjects/VectiesContactsPro/app/src/main/res/layout/activity_onboard.xml" value="0.25" />
         <entry key="..\:/Users/Arjun/StudioProjects/VectiesContactsPro/app/src/main/res/layout/activity_sign_in.xml" value="0.25" />
         <entry key="..\:/Users/Arjun/StudioProjects/VectiesContactsPro/app/src/main/res/layout/activity_singn_up.xml" value="0.1793478260869565" />

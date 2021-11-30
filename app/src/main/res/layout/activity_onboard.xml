@@ -16,8 +16,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:gravity="center"
-            android:layout_weight="1.4">
+            android:layout_weight="1.4"
+            android:gravity="center">
 
             <ViewFlipper
                 android:layout_width="match_parent"
@@ -67,38 +67,78 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="You can get any contact\n here"
+                    android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="22sp"
-                    android:textAlignment="center"
-                    android:gravity="center"
-                    android:text="Hello"
-                    android:textStyle="bold|italic"/>
+                    android:textStyle="bold|italic" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="You can get any were\n here"
+                    android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="22sp"
-                    android:textAlignment="center"
-                    android:gravity="center"
-                    android:text="This"
-                    android:textStyle="bold|italic"/>
+                    android:textStyle="bold|italic" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="You can get any workers\n here"
+                    android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="22sp"
-                    android:textAlignment="center"
-                    android:gravity="center"
-                    android:text="Is"
-                    android:textStyle="bold|italic"/>
+                    android:textStyle="bold|italic" />
 
             </ViewFlipper>
 
         </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="32dp"
+            android:gravity="center"
+            android:text="Ready to get nearby contacts?"
+            android:textAlignment="center"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/get_needed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:elevation="5dp"
+                android:gravity="center"
+                android:text="get start"
+                app:backgroundTint="@color/primaryColor" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/login_button"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:gravity="center"
+            android:text="@string/already_have_an_account"
+            android:textAlignment="center"
+            android:textSize="12sp" />
+
 
     </LinearLayout>
 

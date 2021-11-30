@@ -1,5 +1,6 @@
 package com.example.vectiescontactspro.view.ui.login
 
+import android.graphics.Color
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -7,6 +8,8 @@ import android.view.View
 import androidx.core.content.ContextCompat
 import com.example.vectiescontactspro.R
 import com.example.vectiescontactspro.databinding.ActivitySingnUpBinding
+import com.example.vectiescontactspro.view.ui.dashboard.DashBordActivity
+import com.example.vectiescontactspro.view.utils.Utils.Companion.openActivity
 
 class SingnUpActivity : AppCompatActivity() {
 
@@ -16,19 +19,22 @@ class SingnUpActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivitySingnUpBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding.animationView1.playAnimation()
-        binding.animationView2.playAnimation()
-        binding.animationView3.playAnimation()
-        topBar()
+        toolupBar()
+        sendotp()
 
     }
 
-    private fun topBar() {
-        //  set status text dark
-        window.decorView.systemUiVisibility =
-            View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
+    private fun sendotp() {
+        binding.sendOtp.setOnClickListener {
+            openActivity(DashBordActivity::class.java, this)
+        }
+    }
+
+    private fun toolupBar() {
+        window?.decorView?.systemUiVisibility =
+            (View.SYSTEM_UI_FLAG_LAYOUT_STABLE or View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN)
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            window.statusBarColor = ContextCompat.getColor(this, R.color.white)
+            window.statusBarColor = Color.TRANSPARENT
         }
     }
 
