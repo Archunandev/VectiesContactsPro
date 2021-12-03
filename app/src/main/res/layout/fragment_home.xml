@@ -49,9 +49,9 @@
                         android:layout_gravity="center"
                         android:layout_marginLeft="5dp"
                         android:clickable="true"
+                        android:fontFamily="@font/semibold"
                         android:gravity="center"
                         android:text="Melapudur,Cantonment"
-                        android:fontFamily="@font/semibold"
                         android:textAlignment="center"
                         android:textColor="@color/black"
                         android:textSize="16sp" />
@@ -101,12 +101,12 @@
                     android:layout_marginStart="18dp"
                     android:layout_marginLeft="18dp"
                     android:layout_weight="1"
-                    android:fontFamily="@font/regular"
                     android:background="@color/grey_lite"
                     android:drawableStart="@drawable/ic_search"
                     android:drawableLeft="@drawable/ic_search"
                     android:drawablePadding="10dp"
                     android:drawableTint="@color/primaryColor"
+                    android:fontFamily="@font/regular"
                     android:hint="@string/search"
                     android:imeOptions="actionSearch"
                     android:inputType="text"
@@ -145,6 +145,7 @@
 
             <com.google.android.material.chip.ChipGroup
                 android:id="@+id/chipGroup"
+                style="@style/CustomChipStyle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:singleSelection="true">
@@ -203,19 +204,19 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Quick Access"
-                android:fontFamily="@font/bold"
-                android:textColor="@color/black"
-                android:textSize="16sp"
                 android:layout_marginLeft="12dp"
-                android:layout_marginRight="12dp"/>
+                android:layout_marginRight="12dp"
+                android:fontFamily="@font/bold"
+                android:text="Quick Access"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:orientation="horizontal"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="12dp"
+                android:orientation="horizontal"
                 android:weightSum="3">
 
                 <com.google.android.material.card.MaterialCardView
@@ -228,10 +229,10 @@
                     android:layout_weight="1"
                     android:clickable="true"
                     android:elevation="8dp"
-                    app:cardElevation="5dp"
+                    android:focusable="true"
                     app:cardBackgroundColor="@color/white"
                     app:cardCornerRadius="8dp"
-                    android:focusable="true">
+                    app:cardElevation="5dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -252,8 +253,8 @@
                             android:layout_height="0dp"
                             android:layout_gravity="center"
                             android:layout_weight="0.8"
-                            android:gravity="center"
                             android:fontFamily="@font/semibold"
+                            android:gravity="center"
                             android:text="Police"
                             android:textAlignment="center"
                             android:textSize="12sp" />
@@ -295,9 +296,9 @@
                             android:layout_height="0dp"
                             android:layout_gravity="center"
                             android:layout_weight="0.8"
+                            android:fontFamily="@font/semibold"
                             android:gravity="center"
                             android:text="Emergency"
-                            android:fontFamily="@font/semibold"
                             android:textAlignment="center"
                             android:textSize="12sp" />
 
@@ -338,15 +339,132 @@
                             android:layout_height="0dp"
                             android:layout_gravity="center"
                             android:layout_weight="0.8"
+                            android:fontFamily="@font/semibold"
                             android:gravity="center"
                             android:text="Mechanic"
-                            android:fontFamily="@font/semibold"
                             android:textAlignment="center"
                             android:textSize="12sp" />
 
                     </LinearLayout>
 
                 </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:fontFamily="@font/bold"
+                android:text="Workers"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginRight="12dp"
+                            android:layout_marginBottom="8dp"
+                            app:cardCornerRadius="10dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:adjustViewBounds="true"
+                                android:scaleType="fitXY"
+                                app:srcCompat="@drawable/bc" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_margin="8dp"
+                                android:fontFamily="@font/semibold"
+                                android:text="Mechanic"
+                                android:textColor="@color/white"
+                                android:textSize="18sp" />
+
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginRight="12dp"
+                            android:layout_marginBottom="8dp"
+                            app:cardCornerRadius="10dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:adjustViewBounds="true"
+                                android:scaleType="fitXY"
+                                app:srcCompat="@drawable/bc" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_margin="8dp"
+                                android:fontFamily="@font/semibold"
+                                android:text="Plumber"
+                                android:textColor="@color/white"
+                                android:textSize="18sp" />
+
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginRight="12dp"
+                            android:layout_marginBottom="8dp"
+                            app:cardCornerRadius="10dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:adjustViewBounds="true"
+                                android:scaleType="fitXY"
+                                app:srcCompat="@drawable/bc" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_margin="8dp"
+                                android:fontFamily="@font/semibold"
+                                android:text="Electrician"
+                                android:textColor="@color/white"
+                                android:textSize="18sp" />
+
+                        </com.google.android.material.card.MaterialCardView>
+
+                    </LinearLayout>
+
+
+                </HorizontalScrollView>
 
             </LinearLayout>
 
