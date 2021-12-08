@@ -77,6 +77,8 @@ dependencies {
     //Botttom Navigation
     implementation 'com.github.ibrahimsn98:SmoothBottomBar:1.7.8'
 
+    implementation 'com.hbb20:ccp:2.4.7'
+
 
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'

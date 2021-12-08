@@ -30,7 +30,7 @@ class OnboardActivity : AppCompatActivity() {
     private fun getNeeted() {
 
         binding.getNeeded.setOnClickListener {
-            openActivity(DashBordActivity::class.java, this)
+            openActivity(SingnUpActivity::class.java, this)
         }
 
     }

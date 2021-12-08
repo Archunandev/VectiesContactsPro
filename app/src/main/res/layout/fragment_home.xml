@@ -26,7 +26,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="12dp"
-                android:layout_marginTop="22dp"
+                android:layout_marginTop="18dp"
                 android:layout_marginRight="12dp"
                 android:orientation="horizontal">
 
@@ -83,6 +83,7 @@
             android:layout_marginLeft="12dp"
             android:layout_marginTop="12dp"
             android:layout_marginRight="12dp"
+            android:elevation="8dp"
             android:background="@drawable/search_bg"
             android:orientation="horizontal"
             android:padding="6dp">
@@ -135,15 +136,54 @@
 
         </RelativeLayout>
 
-        <RelativeLayout
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="12dp"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="18dp"
             android:layout_marginRight="12dp"
             android:orientation="horizontal">
 
-            <com.google.android.material.chip.ChipGroup
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/txt_bg"
+                android:fontFamily="@font/medium"
+                android:text="nearby"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/txt_bg"
+                android:fontFamily="@font/medium"
+                android:text="police"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/txt_bg"
+                android:fontFamily="@font/medium"
+                android:text="emergency"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/txt_bg"
+                android:fontFamily="@font/medium"
+                android:text="all"
+                android:textColor="@color/black" />
+
+            <!--<com.google.android.material.chip.ChipGroup
                 android:id="@+id/chipGroup"
                 style="@style/CustomChipStyle"
                 android:layout_width="match_parent"
@@ -182,10 +222,10 @@
                     android:checked="false"
                     android:text="All" />
 
-            </com.google.android.material.chip.ChipGroup>
+            </com.google.android.material.chip.ChipGroup>-->
 
 
-        </RelativeLayout>
+        </LinearLayout>
 
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -198,7 +238,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="16dp"
             android:orientation="vertical">
 
             <TextView
@@ -298,7 +338,7 @@
                             android:layout_weight="0.8"
                             android:fontFamily="@font/semibold"
                             android:gravity="center"
-                            android:text="Emergency"
+                            android:text="Helpline"
                             android:textAlignment="center"
                             android:textSize="12sp" />
 
@@ -351,15 +391,38 @@
 
             </LinearLayout>
 
-            <TextView
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="12dp"
-                android:layout_marginRight="12dp"
-                android:fontFamily="@font/bold"
-                android:text="Workers"
-                android:textColor="@color/black"
-                android:textSize="16sp" />
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:fontFamily="@font/bold"
+                    android:text="Workers"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="3dp"
+                    android:fontFamily="@font/semibold"
+                    android:text="see all"
+                    android:drawableRight="@drawable/ic_keyboard_arrow_right"
+                    android:drawableTint="@color/primaryColor"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:layout_gravity="end"
+                    android:textColor="@color/primaryColor"
+                    android:textSize="16sp" />
+            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -391,7 +454,8 @@
                                 android:layout_height="match_parent"
                                 android:adjustViewBounds="true"
                                 android:scaleType="fitXY"
-                                app:srcCompat="@drawable/bc" />
+                                app:srcCompat="@drawable/bc"
+                                />
 
                             <TextView
                                 android:layout_width="match_parent"
@@ -463,6 +527,179 @@
 
                     </LinearLayout>
 
+
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:fontFamily="@font/bold"
+                    android:text="Emergency"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="3dp"
+                    android:fontFamily="@font/semibold"
+                    android:text="see all"
+                    android:drawableRight="@drawable/ic_keyboard_arrow_right"
+                    android:drawableTint="@color/primaryColor"
+                    android:layout_weight="1"
+                    android:gravity="end"
+                    android:layout_gravity="end"
+                    android:textColor="@color/primaryColor"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:id="@+id/signupEnthusiast"
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginRight="12dp"
+                            android:layout_marginBottom="8dp"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardCornerRadius="10dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:adjustViewBounds="true"
+                                android:background="@drawable/banner_alide"
+                                android:fitsSystemWindows="true"
+                                android:scaleType="fitXY" />
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_margin="10dp"
+                                android:fontFamily="@font/semibold"
+                                android:text="Ambulance"
+                                android:textColor="@color/white"
+                                android:textSize="18sp" />
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginRight="12dp"
+                            android:layout_marginBottom="8dp"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardCornerRadius="10dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:adjustViewBounds="true"
+                                android:background="@drawable/banner_alide"
+                                android:fitsSystemWindows="true"
+                                android:scaleType="fitXY" />
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_margin="10dp"
+                                android:fontFamily="@font/semibold"
+                                android:text="Auto Driver"
+                                android:textColor="@color/white"
+                                android:textSize="18sp" />
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginRight="12dp"
+                            android:layout_marginBottom="8dp"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardCornerRadius="10dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:adjustViewBounds="true"
+                                android:background="@drawable/banner_alide"
+                                android:fitsSystemWindows="true"
+                                android:scaleType="fitXY" />
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_margin="10dp"
+                                android:fontFamily="@font/semibold"
+                                android:text="Doctors"
+                                android:textColor="@color/white"
+                                android:textSize="18sp" />
+                        </com.google.android.material.card.MaterialCardView>
+
+                        <com.google.android.material.card.MaterialCardView
+                            android:layout_width="150dp"
+                            android:layout_height="150dp"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginRight="12dp"
+                            android:layout_marginBottom="8dp"
+                            app:cardBackgroundColor="@color/white"
+                            app:cardCornerRadius="10dp">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:adjustViewBounds="true"
+                                android:background="@drawable/banner_alide"
+                                android:fitsSystemWindows="true"
+                                android:scaleType="fitXY" />
+
+                            <com.google.android.material.textview.MaterialTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="bottom"
+                                android:layout_margin="10dp"
+                                android:fontFamily="@font/semibold"
+                                android:text="First Aid Kit"
+                                android:textColor="@color/white"
+                                android:textSize="18sp" />
+                        </com.google.android.material.card.MaterialCardView>
+
+                    </LinearLayout>
 
                 </HorizontalScrollView>
 

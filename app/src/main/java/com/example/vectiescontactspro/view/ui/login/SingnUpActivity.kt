@@ -1,10 +1,13 @@
 package com.example.vectiescontactspro.view.ui.login
 
+import android.app.Dialog
 import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.view.Window
 import androidx.core.content.ContextCompat
 import com.example.vectiescontactspro.R
 import com.example.vectiescontactspro.databinding.ActivitySingnUpBinding

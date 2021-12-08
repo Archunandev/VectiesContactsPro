@@ -18,7 +18,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_gravity="right"
-            android:layout_weight="1"
+            android:layout_weight="0.8"
             android:gravity="right">
 
             <com.google.android.material.button.MaterialButton
@@ -26,6 +26,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="22dp"
+                android:fontFamily="@font/medium"
                 android:backgroundTint="@android:color/transparent"
                 android:text="Skip"
                 android:textColor="@color/black"
@@ -36,31 +37,82 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1"
+            android:layout_weight="1.2"
+            android:layout_gravity="bottom|center"
+            android:gravity="bottom"
             android:orientation="vertical">
 
-            <EditText
+            <RelativeLayout
+                android:id="@+id/textInputLayout"
                 android:layout_width="match_parent"
-                android:layout_height="52dp"
-                android:layout_marginLeft="32dp"
-                android:layout_marginRight="32dp"
-                android:background="@drawable/rounted_img_button"
-                android:drawableLeft="@drawable/ic_phone"
-                android:drawablePadding="8dp"
-                android:hint="Enter a Phone Number"
-                android:inputType="phone"
-                android:maxLength="10"
-                android:paddingLeft="8dp"
-                android:textColor="@color/black" />
+                android:layout_height="48dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/login_bg"
+                android:padding="6dp">
+
+                <LinearLayout
+                    android:id="@+id/loginPhoneLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:showDividers="middle">
+
+                    <com.hbb20.CountryCodePicker
+                        android:id="@+id/loginCountryPicker"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        app:ccpDialog_backgroundColor="@color/white"
+                        app:ccpDialog_textColor="@color/black"
+                        app:ccp_autoDetectCountry="true"
+                        app:ccp_contentColor="@color/black"
+                        app:ccp_textSize="14sp" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/loginPhoneET"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:textCursorDrawable="@null"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginEnd="12dp"
+                        android:background="@color/white"
+                        android:clickable="false"
+                        android:fontFamily="@font/medium"
+                        android:hint="Enter Phone Number"
+                        android:inputType="number"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/grey"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/send_otp"
                 android:layout_width="match_parent"
-                android:layout_height="52dp"
+                android:layout_height="45dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/login_bg"
+                android:padding="6dp"
+                android:clickable="true"
                 android:layout_gravity="center"
-                android:layout_margin="32dp"
                 android:layout_marginTop="22dp"
                 android:elevation="5dp"
+                android:fontFamily="@font/semibold"
                 android:gravity="center"
                 android:text="Send otp"
                 app:backgroundTint="@color/primaryColor"
@@ -87,9 +139,10 @@
                     android:layout_marginRight="8dp"
                     android:gravity="center"
                     android:text="OR"
+                    android:fontFamily="@font/medium"
                     android:textAlignment="center"
-                    android:textColor="@color/black"
-                    android:textSize="12sp" />
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
 
 
                 <View
@@ -105,57 +158,30 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="22dp"
-                android:weightSum="3"
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:orientation="horizontal">
 
-                <RelativeLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_marginLeft="22dp"
-                    android:layout_weight="1">
-
-                    <ImageButton
-                        android:id="@+id/imageButton"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="left"
-                        android:background="@drawable/rounted_img_button"
-                        android:src="@drawable/ic_facebook" />
-
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:layout_gravity="center"
-                    android:gravity="center">
-
-                    <ImageButton
-                        android:id="@+id/imageButton2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/rounted_img_button"
-                        android:src="@drawable/ic_icons8_google" />
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="right"
-                    android:gravity="right"
-                    android:layout_marginRight="22dp"
-                    android:layout_weight="1">
-
-                    <ImageButton
-                        android:id="@+id/imageButton3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/rounted_img_button"
-                        android:src="@drawable/ic_twitter" />
-                </RelativeLayout>
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/loginGoogleLayout"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginEnd="24dp"
+                    android:clickable="true"
+                    android:fontFamily="@font/bold"
+                    android:text="Sign Up With Google"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    app:cornerRadius="8dp"
+                    app:icon="@drawable/ic_icons8_google"
+                    app:iconTint="@null"
+                    app:iconTintMode="add"
+                    app:iconGravity="textStart"
+                    app:iconPadding="10dp"
+                    app:iconSize="16dp"
+                    app:strokeColor="@color/white" />
 
             </LinearLayout>
 
@@ -172,8 +198,12 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:gravity="center"
-                    android:text="By Clicking login you accept our \n terms &amp; conditions"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginEnd="22dp"
+                    android:text="By click login you should accept our terms \n &amp; \n conditions."
                     android:textAlignment="center"
+                    android:maxLines="3"
+                    android:fontFamily="@font/regular"
                     android:textColor="@color/white"
                     android:textStyle="italic" />
 

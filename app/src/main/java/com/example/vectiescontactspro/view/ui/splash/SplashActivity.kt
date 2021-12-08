@@ -5,7 +5,9 @@ import android.os.Bundle
 import android.os.Handler
 import android.view.View
 import android.view.WindowManager
+import android.view.animation.AnimationUtils
 import androidx.appcompat.app.ActionBar
+import com.example.vectiescontactspro.R
 import com.example.vectiescontactspro.databinding.ActivitySplashBinding
 import com.example.vectiescontactspro.view.ui.login.SignInActivity
 import com.example.vectiescontactspro.view.ui.login.SingnUpActivity
@@ -22,6 +24,9 @@ class SplashActivity : AppCompatActivity() {
         binding = ActivitySplashBinding.inflate(layoutInflater)
         setContentView(binding.root)
         init()
+        val rotate = AnimationUtils.loadAnimation(this, R.anim.splash_anim)
+        binding.splashimg.startAnimation(rotate)
+
     }
 
     private fun init() {
