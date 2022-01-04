@@ -9,6 +9,8 @@
     <color name="white">#FFFFFFFF</color>
     <color name="smoke">#14000000</color>
 
+    <color name="shimmerColor">#C2C2C2</color>
+
 
     <!-- other colors -->
     <color name="grey">#929497</color>

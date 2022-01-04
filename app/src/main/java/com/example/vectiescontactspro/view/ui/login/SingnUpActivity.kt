@@ -6,8 +6,13 @@ import android.graphics.drawable.ColorDrawable
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.transition.Explode
+import android.transition.Slide
+import android.view.Gravity
 import android.view.View
 import android.view.Window
+import android.view.animation.AccelerateDecelerateInterpolator
+import androidx.annotation.RequiresApi
 import androidx.core.content.ContextCompat
 import com.example.vectiescontactspro.R
 import com.example.vectiescontactspro.databinding.ActivitySingnUpBinding
@@ -24,12 +29,39 @@ class SingnUpActivity : AppCompatActivity() {
         setContentView(binding.root)
         toolupBar()
         sendotp()
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            setupWindowAnimations1()
+            //  setupWindowAnimations2()
+        }
 
     }
+
+    @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
+    private fun setupWindowAnimations1() {
+        val slide = Slide()
+        slide.slideEdge = Gravity.START
+        slide.duration = 400
+        slide.interpolator = AccelerateDecelerateInterpolator()
+        // window.exitTransition = slide
+        window.enterTransition = slide
+    }
+
+
+    @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
+    private fun setupWindowAnimations2() {
+        val slide = Slide()
+        slide.slideEdge = Gravity.END
+        slide.duration = 400
+        slide.interpolator = AccelerateDecelerateInterpolator()
+        window.exitTransition = slide
+        //  window.enterTransition = slide
+    }
+
 
     private fun sendotp() {
         binding.sendOtp.setOnClickListener {
             openActivity(DashBordActivity::class.java, this)
+            //  overridePendingTransition(R.anim.enter_right_to_left, R.anim.exit_left_to_right)
         }
     }
 
@@ -41,8 +73,4 @@ class SingnUpActivity : AppCompatActivity() {
         }
     }
 
-    override fun onBackPressed() {
-        super.onBackPressed()
-        finishAffinity()
-    }
 }
