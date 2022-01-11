@@ -30,11 +30,11 @@ class DashBordActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityDashBordBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        supportActionBar?.hide()
         toolupBar()
         setupBottomNav()
 
     }
-
 
     private fun setupBottomNav() {
         navController =

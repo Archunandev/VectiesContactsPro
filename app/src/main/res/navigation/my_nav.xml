@@ -3,9 +3,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/my_nav"
-    app:startDestination="@id/homeFragment">
+    app:startDestination="@id/home">
 
-    <fragment
+   <include app:graph="@navigation/home" />
+   <include app:graph="@navigation/search" />
+   <include app:graph="@navigation/account" />
+
+   <!-- <fragment
         android:id="@+id/homeFragment"
         android:name="com.example.vectiescontactspro.view.ui.fragments.homefrag.HomeFragment"
         android:label="Home"
@@ -46,5 +50,5 @@
             app:destination="@id/homeFragment"
             app:enterAnim="@anim/from_left"
             app:exitAnim="@anim/to_right" />
-    </fragment>
+    </fragment>-->
 </navigation>
