@@ -19,6 +19,8 @@ import com.example.vectiescontactspro.databinding.FragmentHomeBinding
 import com.example.vectiescontactspro.model.hintName
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
+import androidx.navigation.Navigation
+import androidx.navigation.fragment.findNavController
 
 
 class HomeFragment : Fragment() {
@@ -28,16 +30,15 @@ class HomeFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         binding = FragmentHomeBinding.inflate(inflater, container, false)
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+
             setUpCardBackground()
-        }
+
         return binding.root
 
     }
 
-    @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
     fun setUpCardBackground() {
 
         binding.workersCard.setOnClickListener {
@@ -65,7 +66,6 @@ class HomeFragment : Fragment() {
             binding.emerList2.startAnimation(fadeout)
             binding.supportList1.visibility = View.GONE
             binding.supportList1.startAnimation(fadeout)
-
 
         }
 
@@ -121,6 +121,13 @@ class HomeFragment : Fragment() {
             binding.workersList1.startAnimation(fadeout)
             binding.workersList2.startAnimation(fadeout)
             binding.supportList1.startAnimation(slideUp)
+
+        }
+
+        binding.mechQuikAccess.setOnClickListener {
+            findNavController().navigate(
+                HomeFragmentDirections.actionHomeFragmentToWorkersListFragment("arjun")
+            )
 
         }
 

@@ -293,6 +293,7 @@
                 android:weightSum="3">
 
                 <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/mech_quik_access"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_marginLeft="12dp"
@@ -329,7 +330,7 @@
                             android:layout_weight="0.7"
                             android:fontFamily="@font/semibold"
                             android:gravity="center"
-                            android:text="Police"
+                            android:text="Mechanic"
                             android:textAlignment="center"
                             android:textSize="12sp" />
 
@@ -416,7 +417,7 @@
                             android:layout_weight="0.7"
                             android:fontFamily="@font/semibold"
                             android:gravity="center"
-                            android:text="Mechanic"
+                            android:text="Police"
                             android:textAlignment="center"
                             android:textSize="12sp" />
 

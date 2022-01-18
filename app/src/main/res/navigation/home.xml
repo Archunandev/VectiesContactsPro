@@ -9,5 +9,24 @@
         android:id="@+id/homeFragment"
         android:name="com.example.vectiescontactspro.view.ui.fragments.homefrag.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_workersListFragment"
+            app:destination="@id/workersListFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"/>
+
+    </fragment>
+    <fragment
+        android:id="@+id/workersListFragment"
+        android:name="com.example.vectiescontactspro.view.ui.fragments.workersfrag.WorkersListFragment"
+        android:label="fragment_workers_list"
+        tools:layout="@layout/fragment_workers_list" >
+        <argument
+            android:name="workername"
+            app:argType="string"
+            android:defaultValue="workers" />
+    </fragment>
 </navigation>
