@@ -935,7 +935,7 @@
                         android:layout_gravity="bottom"
                         android:layout_margin="10dp"
                         android:fontFamily="@font/semibold"
-                        android:text="TV Channels"
+                        android:text="Entertainment"
                         android:textColor="@color/white"
                         android:textSize="14sp" />
                 </com.google.android.material.card.MaterialCardView>
@@ -965,7 +965,7 @@
                         android:layout_gravity="bottom"
                         android:layout_margin="10dp"
                         android:fontFamily="@font/semibold"
-                        android:text="Covery Flut"
+                        android:text="Politics"
                         android:textColor="@color/white"
                         android:textSize="14sp" />
                 </com.google.android.material.card.MaterialCardView>

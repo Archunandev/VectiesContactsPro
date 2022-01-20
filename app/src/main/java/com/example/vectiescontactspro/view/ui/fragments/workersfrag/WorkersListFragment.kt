@@ -11,7 +11,9 @@ import android.view.ViewGroup
 import android.view.animation.AccelerateDecelerateInterpolator
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
+import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
+import com.example.vectiescontactspro.R
 import com.example.vectiescontactspro.databinding.FragmentWorkersListBinding
 
 
@@ -24,8 +26,9 @@ class WorkersListFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         // Inflate the layout for this fragment
-        binding = FragmentWorkersListBinding.inflate(inflater,container,false)
+        binding = FragmentWorkersListBinding.inflate(inflater, container, false)
         setUpCardBackground()
+        startnavigate()
         return binding.root
     }
 
@@ -34,10 +37,6 @@ class WorkersListFragment : Fragment() {
             context,
             com.example.vectiescontactspro.R.anim.view_gone_visible
         )
-        val slide = Slide()
-        slide.slideEdge = Gravity.START
-        slide.duration = 400
-        slide.interpolator = AccelerateDecelerateInterpolator()
         binding.firstList1.startAnimation(slideUp)
         binding.firstList2.startAnimation(slideUp)
         binding.firstList3.startAnimation(slideUp)
@@ -45,7 +44,18 @@ class WorkersListFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        Log.e("TAG", "onViewCreated: ${args.workername}" )
+        Log.e("TAG", "onViewCreated: ${args.workername}")
     }
+
+    private fun startnavigate() {
+        binding.mecList.setOnClickListener {
+            findNavController().navigate(R.id.action_workersListFragment_to_workersListProfileFragment)
+        }
+        binding.backOnMecList.setOnClickListener {
+            findNavController().navigateUp()
+        }
+    }
+
+
 
 }

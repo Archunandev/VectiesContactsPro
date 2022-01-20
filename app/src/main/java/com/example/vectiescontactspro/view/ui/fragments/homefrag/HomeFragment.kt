@@ -1,25 +1,13 @@
 package com.example.vectiescontactspro.view.ui.fragments.homefrag
 
-import android.app.Dialog
-import android.content.Context
-import android.content.res.ColorStateList
 import android.graphics.Color
-import android.graphics.drawable.ColorDrawable
-import android.os.Build
 import android.os.Bundle
-import android.transition.Slide
 import android.view.*
-import android.view.animation.AccelerateDecelerateInterpolator
 import androidx.fragment.app.Fragment
-import androidx.annotation.RequiresApi
-import androidx.appcompat.widget.Toolbar
-import androidx.core.content.ContextCompat
-import com.example.vectiescontactspro.R
 import com.example.vectiescontactspro.databinding.FragmentHomeBinding
 import com.example.vectiescontactspro.model.hintName
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
-import androidx.navigation.Navigation
 import androidx.navigation.fragment.findNavController
 
 
