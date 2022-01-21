@@ -44,7 +44,7 @@ class WorkersListFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        Log.e("TAG", "onViewCreated: ${args.workername}")
+        Log.e("TAG", "onViewCreated: ${args.workertitle}")
     }
 
     private fun startnavigate() {

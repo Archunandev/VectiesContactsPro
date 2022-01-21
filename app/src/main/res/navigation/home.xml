@@ -25,16 +25,37 @@
         android:label="fragment_workers_list"
         tools:layout="@layout/fragment_workers_list">
         <argument
-            android:name="workername"
+            android:name="workertitle"
             android:defaultValue="workers"
             app:argType="string" />
         <action
             android:id="@+id/action_workersListFragment_to_workersListProfileFragment"
-            app:destination="@id/workersListProfileFragment" />
+            app:destination="@id/workersListProfileFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"/>
     </fragment>
     <fragment
         android:id="@+id/workersListProfileFragment"
         android:name="com.example.vectiescontactspro.view.ui.fragments.workersfrag.workersListProfileFragment"
         android:label="fragment_workers_list_profile"
-        tools:layout="@layout/fragment_workers_list_profile" />
+        tools:layout="@layout/fragment_workers_list_profile" >
+        <action
+            android:id="@+id/action_workersListProfileFragment_to_workerProfileFragment"
+            app:destination="@id/workerProfileFragment"
+            app:enterAnim="@anim/from_right"
+            app:exitAnim="@anim/to_left"
+            app:popEnterAnim="@anim/from_left"
+            app:popExitAnim="@anim/to_right"/>
+    </fragment>
+    <argument
+        android:name="workersubtitle"
+        android:defaultValue="workers"
+        app:argType="string" />
+    <fragment
+        android:id="@+id/workerProfileFragment"
+        android:name="com.example.vectiescontactspro.workerProfileFragment"
+        android:label="fragment_worker_profile"
+        tools:layout="@layout/fragment_worker_profile" />
 </navigation>
