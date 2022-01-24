@@ -17,13 +17,12 @@
             android:exported="true"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.VectiesContactsPro"
-            android:windowSoftInputMode="adjustPan"
-            />
+            android:windowSoftInputMode="adjustPan" />
         <activity
             android:name=".view.ui.login.WelcomeScreenActivity"
             android:exported="true"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="adjustResize"/>
+            android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".view.ui.login.SingnUpActivity"
             android:exported="true"

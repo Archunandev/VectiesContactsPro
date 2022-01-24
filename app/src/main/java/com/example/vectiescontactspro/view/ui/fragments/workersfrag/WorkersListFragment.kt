@@ -1,5 +1,7 @@
 package com.example.vectiescontactspro.view.ui.fragments.workersfrag
 
+import android.graphics.Color
+import android.os.Build
 import android.os.Bundle
 import android.transition.Slide
 import android.util.Log
@@ -29,6 +31,7 @@ class WorkersListFragment : Fragment() {
         binding = FragmentWorkersListBinding.inflate(inflater, container, false)
         setUpCardBackground()
         startnavigate()
+
         return binding.root
     }
 
@@ -53,6 +56,17 @@ class WorkersListFragment : Fragment() {
         }
         binding.backOnMecList.setOnClickListener {
             findNavController().navigateUp()
+        }
+    }
+
+    override fun onResume() {
+        super.onResume()
+        toolupBar()
+    }
+
+    private fun toolupBar() {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            requireActivity().window.setStatusBarColor(Color.TRANSPARENT)
         }
     }
 

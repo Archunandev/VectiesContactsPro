@@ -46,18 +46,26 @@
         <entry key="..\:/Users/91965/StudioProjects/VectiesContactsPro/app/src/main/res/menu/another_menu.xml" value="0.1513157894736842" />
         <entry key="..\:/Users/91965/StudioProjects/VectiesContactsPro/app/src/main/res/menu/bottom_menu.xml" value="0.1513157894736842" />
         <entry key="..\:/Users/Arjun/AndroidStudioProjects/VectiesContactsPro/app/src/main/res/drawable/blach_border2.xml" value="0.21614583333333334" />
+        <entry key="..\:/Users/Arjun/AndroidStudioProjects/VectiesContactsPro/app/src/main/res/drawable/ic_arrow_back.xml" value="0.1" />
+        <entry key="..\:/Users/Arjun/AndroidStudioProjects/VectiesContactsPro/app/src/main/res/drawable/ic_check_circle.xml" value="0.15763888888888888" />
+        <entry key="..\:/Users/Arjun/AndroidStudioProjects/VectiesContactsPro/app/src/main/res/drawable/profile_view.xml" value="0.1" />
+        <entry key="..\:/Users/Arjun/AndroidStudioProjects/VectiesContactsPro/app/src/main/res/drawable/rounted_img_button.xml" value="0.16023166023166024" />
+        <entry key="..\:/Users/Arjun/AndroidStudioProjects/VectiesContactsPro/app/src/main/res/drawable/search_bg.xml" value="0.16023166023166024" />
+        <entry key="..\:/Users/Arjun/AndroidStudioProjects/VectiesContactsPro/app/src/main/res/drawable/txt_bg.xml" value="0.15763888888888888" />
+        <entry key="..\:/Users/Arjun/AndroidStudioProjects/VectiesContactsPro/app/src/main/res/drawable/txt_bg_profile.xml" value="0.15486111111111112" />
         <entry key="..\:/Users/Arjun/AndroidStudioProjects/VectiesContactsPro/app/src/main/res/layout/activity_dash_bord.xml" value="0.16574074074074074" />
         <entry key="..\:/Users/Arjun/AndroidStudioProjects/VectiesContactsPro/app/src/main/res/layout/activity_onboard.xml" value="0.2" />
         <entry key="..\:/Users/Arjun/AndroidStudioProjects/VectiesContactsPro/app/src/main/res/layout/activity_singn_up.xml" value="0.2" />
         <entry key="..\:/Users/Arjun/AndroidStudioProjects/VectiesContactsPro/app/src/main/res/layout/activity_splash.xml" value="0.2" />
         <entry key="..\:/Users/Arjun/AndroidStudioProjects/VectiesContactsPro/app/src/main/res/layout/activity_welcome_screen.xml" value="0.2" />
         <entry key="..\:/Users/Arjun/AndroidStudioProjects/VectiesContactsPro/app/src/main/res/layout/fragment_account.xml" value="0.2" />
-        <entry key="..\:/Users/Arjun/AndroidStudioProjects/VectiesContactsPro/app/src/main/res/layout/fragment_home.xml" value="0.22" />
+        <entry key="..\:/Users/Arjun/AndroidStudioProjects/VectiesContactsPro/app/src/main/res/layout/fragment_home.xml" value="0.10666666666666667" />
         <entry key="..\:/Users/Arjun/AndroidStudioProjects/VectiesContactsPro/app/src/main/res/layout/fragment_search.xml" value="0.2" />
         <entry key="..\:/Users/Arjun/AndroidStudioProjects/VectiesContactsPro/app/src/main/res/layout/fragment_worker_profile.xml" value="0.1" />
         <entry key="..\:/Users/Arjun/AndroidStudioProjects/VectiesContactsPro/app/src/main/res/layout/fragment_workers_list.xml" value="0.1" />
         <entry key="..\:/Users/Arjun/AndroidStudioProjects/VectiesContactsPro/app/src/main/res/layout/fragment_workers_list_profile.xml" value="0.1" />
         <entry key="..\:/Users/Arjun/AndroidStudioProjects/VectiesContactsPro/app/src/main/res/menu/bottom_menu.xml" value="0.2" />
+        <entry key="..\:/Users/Arjun/AndroidStudioProjects/VectiesContactsPro/app/src/main/res/menu/profile_person.xml" value="0.15" />
         <entry key="..\:/Users/Arjun/StudioProjects/VectiesContactsPro/app/src/main/res/drawable/ic_menu.xml" value="0.15555555555555556" />
         <entry key="..\:/Users/Arjun/StudioProjects/VectiesContactsPro/app/src/main/res/drawable/ic_sliders.xml" value="0.15555555555555556" />
         <entry key="..\:/Users/Arjun/StudioProjects/VectiesContactsPro/app/src/main/res/drawable/search_bg.xml" value="0.13240740740740742" />

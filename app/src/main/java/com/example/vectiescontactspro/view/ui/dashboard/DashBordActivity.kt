@@ -48,4 +48,9 @@ class DashBordActivity : AppCompatActivity() {
             window.statusBarColor = Color.TRANSPARENT
         }
     }
+
+    override fun onResume() {
+        super.onResume()
+        toolupBar()
+    }
 }
