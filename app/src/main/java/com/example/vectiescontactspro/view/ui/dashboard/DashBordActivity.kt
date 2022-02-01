@@ -15,10 +15,12 @@ import androidx.navigation.NavController
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupWithNavController
 import com.example.vectiescontactspro.R
 import com.example.vectiescontactspro.databinding.ActivityDashBordBinding
 import com.example.vectiescontactspro.databinding.ActivityOnboardBinding
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class DashBordActivity : AppCompatActivity() {
 
@@ -35,13 +37,21 @@ class DashBordActivity : AppCompatActivity() {
 
     }
 
-
     private fun setupBottomNav() {
-        navController =
-            (supportFragmentManager.findFragmentById(R.id.fragmentContainerView) as NavHostFragment).navController
-        binding.bottomNavigationView.setupWithNavController(navController = navController)
+        val navHostFragment = supportFragmentManager.findFragmentById(
+            R.id.nav_host_container
+        ) as NavHostFragment
+        navController = navHostFragment.navController
+
+        // Setup the bottom navigation view with navController
+        val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottom_nav)
+        bottomNavigationView.setupWithNavController(navController)
 
     }
+
+    /*override fun onSupportNavigateUp(): Boolean {
+        return navController.navigateUp(appBarConfiguration)
+    }*/
 
     private fun toolupBar() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {

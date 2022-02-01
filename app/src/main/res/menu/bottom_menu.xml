@@ -3,21 +3,15 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
-        android:id="@+id/homeFragment"
-        app:showAsAction="ifRoom"
-        android:orderInCategory="1"
+        android:id="@+id/home"
         android:icon="@drawable/home_icon_selector"
         android:title="@string/home" />
     <item
-        android:id="@+id/searchFragment"
-        app:showAsAction="ifRoom"
-        android:orderInCategory="2"
+        android:id="@+id/search"
         android:icon="@drawable/searh_icon_selector"
         android:title="@string/search" />
     <item
-        android:id="@+id/accountFragment"
-        app:showAsAction="ifRoom"
-        android:orderInCategory="3"
+        android:id="@+id/account"
         android:icon="@drawable/profile_icon_selector"
         android:title="@string/account" />
 </menu>
