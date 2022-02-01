@@ -4,7 +4,7 @@ buildscript {
     ext.lifecycleVersion = '2.3.1'
     ext.coroutines = '1.5.1'
     ext.roomVersion = '2.3.0'
-    ext.nav_version = '2.3.5'
+    ext.nav_version = '2.4.0-rc01'
     repositories {
         google()
         jcenter()

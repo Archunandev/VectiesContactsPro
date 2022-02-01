@@ -32,6 +32,7 @@ class DashBordActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityDashBordBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        supportActionBar?.hide()
         toolupBar()
         setupBottomNav()
 
@@ -57,5 +58,10 @@ class DashBordActivity : AppCompatActivity() {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             window.statusBarColor = Color.TRANSPARENT
         }
+    }
+
+    override fun onResume() {
+        super.onResume()
+        toolupBar()
     }
 }
